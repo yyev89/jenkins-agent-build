@@ -15,6 +15,12 @@ pipeline {
                 sh "sudo dnf install httpd -y"
             }
         }
+        stage('Start Web Server') {
+            steps {
+                // install apache web server
+                sh "sudo service httpd start"
+            }
+        }
         stage('Test') {
             steps {
                 // test connection to apache
