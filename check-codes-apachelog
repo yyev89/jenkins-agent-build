@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-error_log="/var/log/apache2/error.log"
+error_log="/var/log/httpd/error_log"
 
 # check for 4xx errors and output to the screen
 echo "4xx errors:"
